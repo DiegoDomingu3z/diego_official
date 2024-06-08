@@ -1,5 +1,4 @@
 import { m, LazyMotion, domAnimation, useMotionValue, useTransform} from "framer-motion";
-import Text from "./Text";
 import { AnimatePresence } from "framer-motion";
 import FormField from "../FormFields/FormFields";
 import { useState } from "react";
@@ -44,7 +43,7 @@ const NameCompenent = () => {
       </AnimatePresence>
     </m.div>
     <m.div
-      className="flex justify-center mt-3 space-x-1"
+      className="flex  mt-3 space-x-1"
       id="repulse-div"
       >
      <AnimatePresence>

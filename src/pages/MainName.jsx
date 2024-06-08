@@ -14,12 +14,14 @@ const MainName = () => {
     <LazyMotion features={domAnimation} strict>
       <m.div
         id="hero"
-        className="relative w-full flex justify-around  items-center  min-h-[800px]"
+        className="relative w-full flex flex-wrap justify-around  items-center  min-h-[800px]"
         >
+          <m.div className="md:order-2 lg:order-1">
         <NameCompenent />
+          </m.div>
         <AnimatePresence>
 
-      <m.div className="">
+      <m.div className="md:order-1 lg:order-2">
        <m.img
         key="image"
         initial={{ opacity: 0, scale: 0.4 }}
@@ -28,7 +30,7 @@ const MainName = () => {
         whileInView="visible"
         transition={{ duration: 1 }}
         style={{ display: 'block' }}
-        className="relative responsive-img" src="https://www.maniconcepteur.com/assets/images/main-img.svg"/>
+        className="relative responsive-img " src="https://www.maniconcepteur.com/assets/images/main-img.svg"/>
       </m.div>
     
         </AnimatePresence>

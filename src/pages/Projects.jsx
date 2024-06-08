@@ -121,7 +121,7 @@ const Projects = () => {
             animate={controls2}
             variants={cards}
           >
-            <h1 className='text-black custom-font text-4xl m-6 pt-7 font-semibold '>GENA</h1>
+            <h1 className='text-black custom-font text-4xl m-6 pt-7 font-semibold '>Gena</h1>
             <div className='flex justify-between'>
               <div className='w-1/3'>
                 <div className='text-black custom-font m-6 text-lg'>
@@ -151,26 +151,23 @@ const Projects = () => {
           </motion.div>
           <motion.div
             ref={ref4}
-            className='bg-gradient-to-r from-blue-200 to-green-50 w-full rounded-lg h-[70vh]'
+            className='bg-gradient-to-r from-purple-200 to-green-50 w-full rounded-lg h-[70vh] mt-6'
             initial="hidden"
             exit="hidden"
             animate={controls4}
             variants={cards}
           >
-            <h1 className='text-black custom-font text-4xl m-6 pt-7 font-semibold '>Yap</h1>
-            <div className=''>
-                <div>
-
-              <div className='w-1/3'>
+                <div className='flex flex-wrap items-center h-full p-6'>
+            <h1 className='text-black custom-font text-4xl  font-semibold w-full'>Yap</h1>
+                  <div className='relative w-full md:w-full lg:w-1/2 h-1/2 md:h-full order-2 md:order-1'>
+                <ImageSlider />
+                  </div>
+              <div className='w-full md:w-full lg:w-1/2 h-1/2 md:h-full order-1 md:order-2'>
                 <div className='text-black custom-font m-6 text-lg'>
                   This is Yap. An IOS mobile app designed for users to engage with people around them anonymously.
                 </div>
               </div>
-              <div className='flex justify-center'>
-                <ImageSlider />
-              </div>
                 </div>
-            </div>
           </motion.div>
         </m.div>
       </m.div>
